@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Cormorant+Upright:wght@300&display=swap');
+
+
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fraunces', serif;
+    
+}
+
+h1 {
+    font-size: 45px;
+    line-height: 60px;
+    color: whitesmoke;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: whitesmoke;
+}
+
+h4 {
+    font-size: 20px;
+    color: whitesmoke;
+
+}
+
+h6 {
+    font-weight: 900;
+    font-size: 12px;
+    color: whitesmoke;
+    
+}
+
+p {
+    font-size: 20px;
+    color: whitesmoke;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 150px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+
+/* header start */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 150px;
+    background-color: #0E0905;
+    box-shadow: 0 5px 15px rgba(19, 38, 57, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+
+/* bio part */
+#bio{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+    background-color: #0E0905;
+    height: 90vh;
+}
+
+#bio .name{
+    max-width: 50%;
+}
+
+#bio h1{
+    font-size: 90px;
+    font-family: 'Lusitana', serif;
+    color: whitesmoke;
+    line-height: 100px;
+    padding-top: 130px;
+}
+
+#bio h6{
+    font-size: 14px;
+    font-family: 'Space Mono', monospace;
+    padding-top: 30px;
+}
+
+#bio h4{
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Cormorant Upright', serif;
+    padding-top: 90px;
+    
+}
+
+#bio .photo img{
+    max-width: 550px;
+    
+}
+
+
+/* info part */
+#info{
+    background-color: #0E0905;
+}
+
+#info p{
+    max-width: 50%;
+    line-height: 30px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 100;
+}
+#info p span{
+    text-decoration: underline;
+    color: white;
+}
+
+
+/* coffee work part */
+
+#coffee-work{
+    background-color: #0E0905;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+#coffee-work h6{
+    font-size: 14px;
+    font-family: 'Space Mono', monospace;
+    padding-bottom: 100px;
+}
+
+#coffee-work .caf img{
+    padding-left: 400px;
+    max-width: 80%;
+    z-index: -9;
+    
+}
+
+#coffee-work .caf-des{
+    position: absolute;
+    padding-top: 100px;
+    left: 350px;
+}
+#coffee-work .caf-des h4{
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+}
+
+
+/* latte image slider */
+#latte-slider{
+    width: auto;
+}
+
+#latte-slider .carousel{
+    background-color: #0E0905;
+    width: auto;
+    height: 90vh;
+    position: relative;
+}
+
+#latte-slider .carousel .slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+#latte-slider .carousel .slide img{
+    display: block;
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+    
+    
+}
+
+#latte-slider .carousel .slide[data-active] {
+    opacity: 1;
+}
+
+#latte-slider .carousel-button{
+    position: absolute;
+    background: none;
+    z-index: 2;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    color: aliceblue;
+    transform: translateY(-50%);
+   
+}
+
+#latte-slider .prev{
+    right: 34%;
+    
+}
+
+#latte-slider .next{
+    left: 10%;
+    transform: scaleX(-1);
+}
